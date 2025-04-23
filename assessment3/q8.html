@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute and Fixed Position Example</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            height: 2000px; 
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        
+        .container {
+            position: relative; 
+            width: 300px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+        }
+
+        
+        .absolute-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            position: absolute;
+            top: 50px; 
+            left: 50px; 
+        }
+
+        
+        .fixed-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            position: fixed;
+            top: 20px; 
+            right: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Demonstrating Absolute and Fixed Positions</h1>
+
+    
+    <div class="container">
+        <div class="absolute-box"></div>
+    </div>
+
+    
+    <div class="fixed-box"></div>
+</body>
+</html>
